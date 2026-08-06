@@ -1,26 +1,47 @@
- 
+# Squishia
 
+A 2D Action RPG developed by **Studio of Sword** using **Microsoft MakeCode Arcade**.
 
-> Open this page at [https://crzle0723.github.io/squishia/](https://crzle0723.github.io/squishia/)
+## About
 
-## Use as Extension
+100 years after the legendary hero Samknight saved the world, the Dark Lord's son, **Malice**, has conquered the land.
 
-This repository can be added as an **extension** in MakeCode.
+You play as **Squishy**, one of the kingdom's strongest warriors, sent on a mission to defeat Malice and restore peace. Alongside your companion **Ockey**, you'll explore caves, villages, forests, and dangerous dungeons while collecting equipment, upgrading abilities, and battling powerful enemies.
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/crzle0723/squishia** and import
+## Features
 
-## Edit this project
+- Fast-paced combat
+- NPC dialogue and quests
+- Inventory system
+- Companion (Ockey)
+- Boss fights
+- Multiple maps
+- Upgrades
+- Story cutscenes
+- Original music
+- Save system (planned)
+- Metroidvania-style exploration (planned)
 
-To edit this repository in MakeCode.
+## Controls
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/crzle0723/squishia** and click import
+| Button | Action |
+|--------|--------|
+| Arrow Keys / WASD | Move |
+| A | Attack |
+| A + B | Ockey Flare |
+| Menu | Pause/Menu |
 
-#### Metadata (used for search, rendering)
+## Built With
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+- Microsoft MakeCode Arcade
+- TypeScript
+
+## Team
+
+Developed by **Studio of Sword**.
+
+## Status
+
+🟢 Active Development
+
+Current Version: Alpha
