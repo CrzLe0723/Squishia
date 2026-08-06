@@ -61,6 +61,7 @@
  * MathX https://github.com/CrzLe0723/MathX
  * RetroFX https://github.com/CrzLe0723/RetroFx
  * Transparency https://github.com/rando-muser/arcade-transparency
+ * Zoom https://github.com/kiwiphoenix364/pxt-zoom
  *
  */
 
@@ -235,51 +236,55 @@ let phase: SwordPhase = SwordPhase.Done
 
 // Function Vars 
 
-
-
-
-game.setDialogCursor(assets.image`saplingcursor`)
-game.splash("100 years after the great hero Samknight saved the world, the Dark Lord's son, Malice, took over the land. Squishy is one of her kingdom's strongest warriors, and Squishy has been sent on a mission by the queen of your kingdom to go find Malice and kill him.")
-hero = sprites.create(assets.image`squishy`, SpriteKind.Player)
-state = Enum.enumVar("game state", "cutscene")
-coins = 200
-ockey = sprites.create(assets.image`ockey`, SpriteKind.helper)
-let slimy_attacking = false
-player_dir = Enum.enumVar("dir", "up")
-flare_duration = 100
-let flare_power = 4
-herohassword = false
+startIntro()
 let ockeyisattacking = false
-init_inventory()
-ockey.setPosition(hero.x + 15, hero.x + 15)
-animation.runImageAnimation(
-ockey,
-assets.animation`ockeyidle`,
-500,
-true
-)
-scene.cameraFollowSprite(hero)
-tiles.setCurrentTilemap(tilemap`level1`)
-story.startCutscene(function () {
-    story.printCharacterText("Okay! How are we going to find the Malice?", "Squishy")
-    story.printCharacterText("We could just wander around until we find him?", "Ockey")
-    hero.setImage(assets.image`squishybored`)
-    story.printCharacterText("We need to actually find him, Ockey.", "Squishy")
-    story.printCharacterText("Well we could start by getting out of this sand dungeon.", "Ockey")
-    story.printCharacterText("How did we even get down here?", "Squishy")
-    story.printCharacterText("But anyway I saw an exit close by.", "Squishy")
-    story.printCharacterText("You can move with arrow keys, by the way. Or WASD if you prefer.", "Ockey")
-    music.setVolume(50)
-    music.play(music.createSong(assets.song`Powerup_theme`), music.PlaybackMode.UntilDone)
-    story.printCharacterText("Who are you talking to?", "Squishy")
-    story.cancelAllCutscenes()
-    state = Enum.enumVar("game state", "playing")
-    HP()
-    info.setScore(coins)
-    music.setVolume(20)
-    music.play(music.createSong(assets.song`grass theme`), music.PlaybackMode.LoopingInBackground)
-})
+let flare_power = 4
+let slimy_attacking = false
+function startGame(): void {
 
+    Zoom.SetZoomFilter(1, Mode.Center)
+    game.setDialogCursor(assets.image`saplingcursor`)
+    game.splash("100 years after the great hero Samknight saved the world, the Dark Lord's son, Malice, took over the land. Squishy is one of her kingdom's strongest warriors, and Squishy has been sent on a mission by the queen of your kingdom to go find Malice and kill him.")
+    hero = sprites.create(assets.image`squishy`, SpriteKind.Player)
+    state = Enum.enumVar("game state", "cutscene")
+    coins = 200
+    ockey = sprites.create(assets.image`ockey`, SpriteKind.helper)
+
+    player_dir = Enum.enumVar("dir", "up")
+    flare_duration = 100
+
+    herohassword = false
+
+    init_inventory()
+    ockey.setPosition(hero.x + 15, hero.x + 15)
+    animation.runImageAnimation(
+        ockey,
+        assets.animation`ockeyidle`,
+        500,
+        true
+    )
+    scene.cameraFollowSprite(hero)
+    tiles.setCurrentTilemap(tilemap`level1`)
+    story.startCutscene(function () {
+        story.printCharacterText("Okay! How are we going to find the Malice?", "Squishy")
+        story.printCharacterText("We could just wander around until we find him?", "Ockey")
+        hero.setImage(assets.image`squishybored`)
+        story.printCharacterText("We need to actually find him, Ockey.", "Squishy")
+        story.printCharacterText("Well we could start by getting out of this sand dungeon.", "Ockey")
+        story.printCharacterText("How did we even get down here?", "Squishy")
+        story.printCharacterText("But anyway I saw an exit close by.", "Squishy")
+        story.printCharacterText("You can move with arrow keys, by the way. Or WASD if you prefer.", "Ockey")
+        music.setVolume(50)
+        music.play(music.createSong(assets.song`Powerup_theme`), music.PlaybackMode.UntilDone)
+        story.printCharacterText("Who are you talking to?", "Squishy")
+        story.cancelAllCutscenes()
+        state = Enum.enumVar("game state", "playing")
+        HP()
+        info.setScore(coins)
+        music.setVolume(20)
+        music.play(music.createSong(assets.song`grass theme`), music.PlaybackMode.LoopingInBackground)
+    })
+}
 // Events
 game.onUpdate(function () {
 
@@ -484,6 +489,7 @@ forever(function () {
     }
 })
 forever(function () {
+    if (!ockey) return;
     ockey.follow(hero, 75)
     if (player_dir == Enum.enumVar("dir", "up")) {
         ockey.y = hero.y + 15
@@ -954,6 +960,9 @@ function create_entity_on_tile(image2: Image, kind: number, tile_image: Image, i
     sprites.setDataNumber(entity, "ID", id)
 }
 function startIntro(): void {
+    game.stats = true
+    color.setPalette(color.IntroPalette)
+    Zoom.SetZoomFilterOffset(2, -150, -140)
     Sword1 = sprites.create(assets.image`Sword_Right`, SpriteKind.Sword)
     Sword1.setPosition(-25, 82)
     spriteFx.setRotation(Sword1, 180)
@@ -986,7 +995,7 @@ function startIntro(): void {
 
 
         // Fade back from white
-        color.startFadeFromCurrent(color.originalPalette, 1500)
+        color.startFadeFromCurrent(color.IntroPalette, 1500)
 
 
         // Title pop-in animation
@@ -1017,6 +1026,9 @@ function startIntro(): void {
         timer.after(2000, () => {
             color.startFadeFromCurrent(color.Black, 2000)
             color.pauseUntilFadeDone()
+            pause(2000)
+            color.startFadeFromCurrent(color.originalPalette, 2000)
+            startGame()
         })
 
     })

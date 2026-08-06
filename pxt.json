@@ -47,7 +47,8 @@
         "pxt-imgfx": "github:gasanchik/pxt-imgfx#52bb097e5076de23017b6036ebbf987150183e76",
         "retro-fx": "github:CrzLe0723/RetroFx#v2.0.0",
         "MathX Extension": "github:CrzLe0723/MathX#v1.0.0",
-        "transparency": "github:rando-muser/arcade-transparency#9c55bdd591750cbf98b3a2f1bf2c86decc55b800"
+        "transparency": "github:rando-muser/arcade-transparency#9c55bdd591750cbf98b3a2f1bf2c86decc55b800",
+        "pxt-zoom": "github:kiwiphoenix364/pxt-zoom#v3.0.3"
     },
     "files": [
         "main.blocks",
