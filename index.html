@@ -1,300 +1,224 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Squishia | Studio of Sword</title>
-
-    <meta
-        name="description"
-        content="Squishia is a fantasy action RPG created by Studio of Sword."
-    >
+    <title>Squishia | A Fantasy Action RPG</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         Navigation
-    ========================== -->
-    <nav class="navbar">
-        <a class="nav-logo" href="#home">SQUISHIA</a>
+    <header>
+        <nav>
+            <h2 class="logo">SQUISHIA</h2>
 
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#play">Play</a>
-            <a href="#controls">Controls</a>
-            <a href="#development">Development</a>
-        </div>
-    </nav>
-
-
-    <!-- =========================
-         Hero
-    ========================== -->
-    <header id="home" class="hero">
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-            <p class="hero-eyebrow">STUDIO OF SWORD PRESENTS</p>
-
-            <h1>SQUISHIA</h1>
-
-            <p class="hero-subtitle">
-                A Fantasy Action RPG
-            </p>
-
-            <p class="hero-description">
-                Explore mysterious lands, battle dangerous creatures,
-                discover powerful weapons, and begin the journey to stop Malice.
-            </p>
-
-            <div class="hero-buttons">
-                <a class="button button-primary" href="#play">
-                    Play Now
-                </a>
-
-                <a
-                    class="button button-secondary"
-                    href="https://github.com/CrzLe0723/Squishia"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View on GitHub
-                </a>
-            </div>
-        </div>
-
-        <a class="scroll-indicator" href="#about" aria-label="Scroll to about">
-            ↓
-        </a>
+            <ul>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#play">Play</a></li>
+                <li><a href="#development">Development</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ul>
+        </nav>
     </header>
 
 
     <main>
 
-        <!-- =========================
-             About / Story
-        ========================== -->
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="section-label">THE JOURNEY BEGINS</p>
-                <h2>The Story</h2>
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>SQUISHIA</h1>
+
+                <h2>A Fantasy Action RPG</h2>
+
+                <p>
+                    Explore a mysterious world, battle monsters,
+                    discover legendary weapons, and uncover the secrets
+                    behind Malice's rule.
+                </p>
+
+                <div class="buttons">
+
+                    <a class="button" href="#play">
+                        Play Now
+                    </a>
+
+                    <a class="button secondary"
+                       href="https://github.com/CrzLe0723/Squishia">
+                        GitHub
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="story-panel">
-                <p>
-                    One hundred years after the great hero Samknight saved the
-                    world, a new threat has risen.
-                </p>
-
-                <p>
-                    Malice, son of the Dark Lord, has taken control of the land.
-                    Squishy, one of the kingdom's strongest warriors, has been
-                    sent by the queen on a mission to find him.
-                </p>
-
-                <p>
-                    Joined by Ockey, Squishy must explore the world, grow
-                    stronger, and uncover what stands between them and Malice.
-                </p>
-            </div>
         </section>
 
 
-        <!-- =========================
-             Features
-        ========================== -->
-        <section id="features" class="section section-dark">
-            <div class="section-heading">
-                <p class="section-label">THE ADVENTURE</p>
-                <h2>Features</h2>
-            </div>
 
-            <div class="feature-grid">
+        <!-- Story -->
+        <section id="story">
 
-                <article class="feature-card">
-                    <div class="feature-icon">⚔</div>
-                    <h3>Combat</h3>
-                    <p>
-                        Battle enemies using weapons, movement, abilities,
-                        and Ockey's attacks.
-                    </p>
-                </article>
+            <h2>Story</h2>
 
-                <article class="feature-card">
-                    <div class="feature-icon">◆</div>
-                    <h3>Exploration</h3>
-                    <p>
-                        Travel through towns, caves, dungeons, and other
-                        interconnected areas.
-                    </p>
-                </article>
+            <p>
+                100 years after the great hero Samknight saved the world,
+                a new darkness has appeared.
 
-                <article class="feature-card">
-                    <div class="feature-icon">✦</div>
-                    <h3>Companions</h3>
-                    <p>
-                        Journey alongside Ockey and improve her abilities
-                        throughout the adventure.
-                    </p>
-                </article>
+                Malice has taken control of the kingdom, and Squishy,
+                one of the kingdom's strongest warriors, has been sent
+                on a mission to stop him.
 
-                <article class="feature-card">
-                    <div class="feature-icon">▣</div>
-                    <h3>Inventory</h3>
-                    <p>
-                        Discover useful items, collect equipment, and manage
-                        what you find along the way.
-                    </p>
-                </article>
+                With the help of Ockey, a mysterious companion,
+                Squishy must explore the world and uncover the truth.
+            </p>
 
-            </div>
         </section>
 
 
-        <!-- =========================
-             Play
-        ========================== -->
-        <section id="play" class="section">
-            <div class="section-heading">
-                <p class="section-label">ENTER THE WORLD</p>
-                <h2>Play Squishia</h2>
 
-                <p>
-                    Play the latest web version directly in your browser.
-                </p>
+        <!-- Features -->
+        <section id="features">
+
+            <h2>Features</h2>
+
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>⚔ Combat</h3>
+                    <p>
+                        Battle enemies using weapons,
+                        abilities, and strategy.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🗺 Exploration</h3>
+                    <p>
+                        Discover new areas filled with
+                        secrets and challenges.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🎒 Inventory</h3>
+                    <p>
+                        Collect items, coins,
+                        and upgrades.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🧙 Ockey</h3>
+                    <p>
+                        Travel with your companion
+                        and improve their abilities.
+                    </p>
+                </div>
+
+
             </div>
+
+        </section>
+
+
+
+
+        <!-- Play -->
+        <section id="play">
+
+            <h2>Play Squishia</h2>
+
+            <p>
+                Play the latest version of Squishia below.
+            </p>
+
 
             <div class="game-container">
 
-                <!--
-                    We'll put the MakeCode iframe here next.
-                -->
-
-                <div class="game-placeholder">
-                    <span>Game Embed Coming Next</span>
-                </div>
+                <iframe
+                    src="https://crzle0723.github.io/Squishia/"
+                    title="Squishia Game">
+                </iframe>
 
             </div>
+
+
         </section>
 
 
-        <!-- =========================
-             Controls
-        ========================== -->
-        <section id="controls" class="section section-dark">
-            <div class="section-heading">
-                <p class="section-label">HOW TO PLAY</p>
-                <h2>Controls</h2>
-            </div>
 
-            <div class="controls">
 
-                <div class="control">
-                    <span>Move</span>
-                    <kbd>WASD</kbd>
-                    <span class="control-or">or</span>
-                    <kbd>Arrow Keys</kbd>
-                </div>
+        <!-- Development -->
+        <section id="development">
 
-                <div class="control">
-                    <span>Attack</span>
-                    <kbd>A</kbd>
-                </div>
+            <h2>Development</h2>
 
-                <div class="control">
-                    <span>Ockey Flare</span>
-                    <kbd>A</kbd>
-                    <span>+</span>
-                    <kbd>B</kbd>
-                </div>
+            <p>
+                Current Version:
+                <strong>Alpha</strong>
+            </p>
 
-                <div class="control">
-                    <span>Menu</span>
-                    <kbd>Menu</kbd>
-                </div>
+            <p>
+                Squishia is currently in active development.
+                New features, areas, enemies, and mechanics
+                are being added.
+            </p>
 
-            </div>
         </section>
 
 
-        <!-- =========================
-             Development
-        ========================== -->
-        <section id="development" class="section">
-            <div class="section-heading">
-                <p class="section-label">BEHIND THE GAME</p>
-                <h2>Development</h2>
-            </div>
 
-            <div class="development-grid">
+        <!-- Credits -->
+        <section id="credits">
 
-                <article class="development-card">
-                    <span class="development-label">STATUS</span>
-                    <h3>In Development</h3>
-                    <p>
-                        Squishia is actively being developed and will continue
-                        to receive new areas, mechanics, enemies, and content.
-                    </p>
-                </article>
+            <h2>Credits</h2>
 
-                <article class="development-card">
-                    <span class="development-label">VERSION</span>
-                    <h3>Early Development</h3>
-                    <p>
-                        Features and content may change significantly as
-                        development continues.
-                    </p>
-                </article>
+            <p>
+                Created by <strong>Studio of Sword</strong>
+            </p>
 
-            </div>
+            <p>
+                Contributors:
+            </p>
 
-            <div class="github-callout">
-                <div>
-                    <h3>Follow Development</h3>
-                    <p>
-                        View the source code, issues, and development history
-                        on GitHub.
-                    </p>
-                </div>
+            <ul>
+                <li>Coda Knight</li>
+                <li>Future contributors</li>
+            </ul>
 
-                <a
-                    class="button button-primary"
-                    href="https://github.com/CrzLe0723/Squishia"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Open GitHub
-                </a>
-            </div>
         </section>
+
 
     </main>
 
 
-    <!-- =========================
-         Footer
-    ========================== -->
-    <footer class="footer">
-        <h2>SQUISHIA</h2>
+
+    <footer>
 
         <p>
-            Created by Studio of Sword
+            © 2026 Studio of Sword |
+            MIT Licensed
         </p>
 
-        <p class="footer-small">
-            © 2026 Studio of Sword
-        </p>
     </footer>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
 ```
