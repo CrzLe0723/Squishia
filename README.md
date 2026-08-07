@@ -42,16 +42,15 @@ You play as **Squishy**, one of the kingdom's strongest warriors, sent on a miss
 Developed by **Studio of Sword**:
 
 ## Individual Members and What They Did
-**Coda Knight**: Helped with coding, designing NPCs with **Vital** and **Air**, created the Github page for the game, and helped with music and art.
-**Voxel**: Helped with coding
-**Studio_of_Sword**: Created the game idea, helped all around and gave the ideas he wanted; pretty much was the person who let us code and help with the game.
-|--------|--------|
-**YamJam**: Helped with music and coding
-**Air**: Helped with **lore** alongside **Vital** and worked with **Coda Knight** when designing NPCs
-**Vital**: Helped with **lore** alongside **Air** and worked with **Coda Knight** when designing NPCs
-**LazerTag2**: Helped a little all around and helped code the game
-**thewizardgnome**: Helped with debugging and all around
-**TheEarth**: Helped create most of the art.
+- **Coda Knight**: Helped with coding, designing NPCs with **Vital** and **Air**, created the Github page for the game, and helped with music and art.
+- **Voxel**: Helped with coding
+- **Studio_of_Sword**: Created the game idea, helped all around and gave the ideas he wanted; pretty much was the person who let us code and help with the game.
+- **YamJam**: Helped with music and coding
+- **Air**: Helped with **lore** alongside **Vital** and worked with **Coda Knight** when designing NPCs
+- **Vital**: Helped with **lore** alongside **Air** and worked with **Coda Knight** when designing NPCs
+- **LazerTag2**: Helped a little all around and helped code the game
+- **thewizardgnome**: Helped with debugging and all around
+- **TheEarth**: Helped create most of the art.
 
 ## Status
 
