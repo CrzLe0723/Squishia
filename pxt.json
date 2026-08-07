@@ -1,7 +1,7 @@
 {
     "name": "Squishia",
     "version": "0.0.2",
-    "description": "",
+    "description": "Action RPG built with MakeCode Arcade by Studio of Sword.",
     "dependencies": {
         "device": "*",
         "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
