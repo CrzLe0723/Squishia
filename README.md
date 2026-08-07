@@ -37,6 +37,19 @@ You play as **Squishy**, one of the kingdom's strongest warriors, sent on a miss
 - TypeScript
 - A Team of Dedicated Workers
 
+## Contributing
+
+Contributions are welcome!
+
+If you'd like to help improve Squishia:
+1. Read the CONTRIBUTING.md file
+2. Fork the repository.
+3. Create a new branch.
+4. Make your changes.
+5. Open a Pull Request.
+
+Please discuss major changes through GitHub Issues first.
+
 ## Team
 
 Developed by **Studio of Sword**:
