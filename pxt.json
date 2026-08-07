@@ -95,5 +95,13 @@
         "#E5CDC4",
         "#804000",
         "#000000"
-    ]
+    ],
+    "theme": {
+        "skin": "purple",
+        "background-color": "#24163A",
+        "button-stroke": "#D4AF37",
+        "text-color": "#FFFFFF",
+        "button-fill": "#6A3FB5",
+        "dpad-fill": "#E6C65C"
+    }
 }
