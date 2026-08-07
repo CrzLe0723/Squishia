@@ -41,7 +41,7 @@ You play as **Squishy**, one of the kingdom's strongest warriors, sent on a miss
 
 Developed by **Studio of Sword**:
 
-## Individual Members and What They Did
+### Individual Members and What They Did
 - **Coda Knight**: Helped with coding, designing NPCs with **Vital** and **Air**, created the Github page for the game, and helped with music and art.
 - **Voxel**: Helped with coding
 - **Studio_of_Sword**: Created the game idea, helped all around and gave the ideas he wanted; pretty much was the person who let us code and help with the game.
